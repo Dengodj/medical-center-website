@@ -1,0 +1,62 @@
+@use '../../styles/abstracts/variables' as *;
+@use '../../styles/abstracts/mixins' as *;
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: var(--bg-white);
+  padding: 10px 0;
+
+  button {
+    font-family: var(--font-headings);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    background: transparent;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    position: relative;
+    transition: color var(--transition-speed);
+
+    &:hover {
+      color: var(--primary-color);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 16px;
+      right: 16px;
+      height: 2px;
+      background-color: var(--primary-color);
+      transform: scaleX(0);
+      transition: transform var(--transition-speed);
+    }
+
+    &:hover::after,
+    &.active::after {
+      transform: scaleX(1);
+    }
+
+    &.active {
+      color: var(--primary-color);
+      font-weight: 700;
+    }
+  }
+}
+
+@include mobile {
+  .nav-menu {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 8px 15px;
+
+    button {
+      padding: 6px 12px;
+      font-size: 0.9rem;
+    }
+  }
+}

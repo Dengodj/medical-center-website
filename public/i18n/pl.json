@@ -1,0 +1,28 @@
+{
+  "logoTitle": "Centrum",
+  "logoAccent": "Medyczne",
+  "NAV": {
+    "HOME": "Główna",
+    "ABOUT": "O nas",
+    "SERVICES": "Usługi",
+    "DOCTORS": "Lekarze",
+    "CONTACTS": "Kontakty"
+  },
+  "PAGES": {
+    "HOME_TITLE": "Witamy w naszym centrum medycznym",
+    "HOME_SUBTITLE": "Troska o Twoje zdrowie to nasz priorytet. Nowoczesny sprzęt i doświadczeni lekarze.",
+    "ABOUT_TITLE": "O naszej klinice",
+    "ABOUT_SUBTITLE": "Pracujemy dla Twojego zdrowia, wykorzystując zaawansowane technologie na poziomie europejskim.",
+    "SERVICES_TITLE": "Nasze usługi medyczne",
+    "SERVICES_SUBTITLE": "Szeroki zakres diagnostyki, leczenia i profilaktyki chorób dla całej rodziny.",
+    "DOCTORS_TITLE": "Nasi wysoko wykwalifikowani lekarze",
+    "DOCTORS_SUBTITLE": "Zespół profesjonalistów i ekspertów z wieloletnim doświadczeniem zawodowym.",
+    "CONTACTS_TITLE": "Skontaktuj się z nami",
+    "CONTACTS_SUBTITLE": "Umów się na wizytę lub zadaj nam dowolne pytanie. Jesteśmy do Twojej dyspozycji.",
+    "BTN_MORE": "Więcej informacji",
+    "BTN_BOOK": "Zarezerwuj wizytę"
+  },
+  "FOOTER": {
+    "RIGHTS": "Wszelkie prawa zastrzeżone."
+  }
+}

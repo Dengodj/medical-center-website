@@ -1,0 +1,25 @@
+@use '../../styles/abstracts/variables' as *;
+@use '../../styles/abstracts/mixins' as *;
+
+.main-wrapper {
+  background-color: var(--primary-hover);
+  min-height: calc(100vh - 70px - 50px - 60px);
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+@include mobile {
+  .main-wrapper {
+    padding: 20px 0;
+    min-height: calc(100vh - 60px - 45px - 60px);
+  }
+}

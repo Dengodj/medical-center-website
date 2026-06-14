@@ -1,0 +1,21 @@
+<nav class="nav-menu">
+  <button [class.active]="isActive('/')" (click)="navigateTo('/')">
+    {{ langData()['NAV']?.['HOME'] || 'Головна' }}
+  </button>
+
+  <button [class.active]="isActive('/about')" (click)="navigateTo('/about')">
+    {{ langData()['NAV']?.['ABOUT'] || 'Про нас' }}
+  </button>
+
+  <button [class.active]="isActive('/services')" (click)="navigateTo('/services')">
+    {{ langData()['NAV']?.['SERVICES'] || 'Послуги' }}
+  </button>
+
+  <button [class.active]="isActive('/doctors')" (click)="navigateTo('/doctors')">
+    {{ langData()['NAV']?.['DOCTORS'] || 'Лікарі' }}
+  </button>
+
+  <button [class.active]="isActive('/contacts')" (click)="navigateTo('/contacts')">
+    {{ langData()['NAV']?.['CONTACTS'] || 'Контакти' }}
+  </button>
+</nav>
