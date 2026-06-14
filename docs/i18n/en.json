@@ -1,0 +1,28 @@
+{
+  "logoTitle": "Medical",
+  "logoAccent": "Center",
+  "NAV": {
+    "HOME": "Home",
+    "ABOUT": "About Us",
+    "SERVICES": "Services",
+    "DOCTORS": "Doctors",
+    "CONTACTS": "Contacts"
+  },
+  "PAGES": {
+    "HOME_TITLE": "Welcome to Our Medical Center",
+    "HOME_SUBTITLE": "Caring for your health is our top priority. Modern equipment and experienced doctors.",
+    "ABOUT_TITLE": "About Our Clinic",
+    "ABOUT_SUBTITLE": "We work for your health using advanced European-level medical technologies.",
+    "SERVICES_TITLE": "Our Medical Services",
+    "SERVICES_SUBTITLE": "A wide range of diagnostics, treatment, and disease prevention for the whole family.",
+    "DOCTORS_TITLE": "Our Highly Qualified Doctors",
+    "DOCTORS_SUBTITLE": "A team of professionals and experts with many years of practical experience.",
+    "CONTACTS_TITLE": "Contact Us",
+    "CONTACTS_SUBTITLE": "Make an appointment or ask us any question. We are always here to help.",
+    "BTN_MORE": "Learn More",
+    "BTN_BOOK": "Book an Appointment"
+  },
+  "FOOTER": {
+    "RIGHTS": "All rights reserved."
+  }
+}

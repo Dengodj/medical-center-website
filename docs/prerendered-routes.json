@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "/medical-center": {},
+    "/medical-center/about": {},
+    "/medical-center/contacts": {},
+    "/medical-center/doctors": {},
+    "/medical-center/services": {}
+  }
+}
