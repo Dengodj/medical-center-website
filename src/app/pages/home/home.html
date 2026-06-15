@@ -2,12 +2,334 @@
   <h1 class="banner-title">
     {{ langData()['PAGES']?.['HOME_TITLE'] || '...' }}
   </h1>
-
   <p class="banner-text">
     {{ langData()['PAGES']?.['HOME_SUBTITLE'] || '...' }}
   </p>
-
-  <button class="banner-btn">
+  <button class="banner-btn" (click)="onBook('GENERAL')">
     {{ langData()['PAGES']?.['BTN_MORE'] || '...' }}
   </button>
 </section>
+
+<section class="services-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="sub-title">
+        {{ langData()['SERVICES']?.['SECTION_SUBTITLE'] || 'Наші Напрямки' }}
+      </span>
+      <h2>
+        {{ langData()['SERVICES']?.['SECTION_TITLE'] || 'Медичні послуги для всієї родини' }}
+      </h2>
+      <div class="header-line"></div>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card featured-card">
+        <div class="card-top">
+          <span class="service-number">01</span>
+          <div class="card-icon-placeholder"><i class="med-icon">✦</i></div>
+        </div>
+        <div class="card-body">
+          <h3>{{ langData()['SERVICES']?.['CAT1_TITLE'] || 'Безкоштовно за декларацією' }}</h3>
+          <p class="short-desc">
+            {{
+              langData()['SERVICES']?.['CAT1_DESC'] || 'Послуги, які повністю покриваються НСЗУ.'
+            }}
+          </p>
+          <ul class="subcategory-list">
+            <li>
+              <span class="bullet-marker"></span>
+              <span>{{
+                langData()['SERVICES']?.['CAT1_ITEM1'] || 'Консультація сімейного лікаря'
+              }}</span>
+            </li>
+            <li>
+              <span class="bullet-marker"></span>
+              <span>{{ langData()['SERVICES']?.['CAT1_ITEM2'] || 'Загальний аналіз крові' }}</span>
+            </li>
+            <li>
+              <span class="bullet-marker"></span>
+              <span>{{
+                langData()['SERVICES']?.['CAT1_ITEM3'] || 'Загальний холестерин та глюкоза'
+              }}</span>
+            </li>
+            <li>
+              <span class="bullet-marker"></span>
+              <span>{{
+                langData()['SERVICES']?.['CAT1_ITEM4'] || 'Загальний аналіз сечі та ЕКГ'
+              }}</span>
+            </li>
+            <li>
+              <span class="bullet-marker"></span>
+              <span>{{
+                langData()['SERVICES']?.['CAT1_ITEM5'] || 'Електронні лікарняні та скерування'
+              }}</span>
+            </li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <button class="details-btn" (click)="onBook('CAT1_TITLE')">
+            <span>{{ langData()['PAGES']?.['BTN_MORE'] || 'Детальніше' }}</span>
+            <span class="arrow">→</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="card-top">
+          <span class="service-number">02</span>
+          <div class="card-icon-placeholder"><i class="med-icon">✦</i></div>
+        </div>
+        <div class="card-body">
+          <h3>{{ langData()['SERVICES']?.['CAT2_TITLE'] || 'Кардіологія та діагностика' }}</h3>
+          <p class="short-desc">
+            {{ langData()['SERVICES']?.['CAT2_DESC'] || 'Комплексне дослідження серця та судин.' }}
+          </p>
+          <ul class="subcategory-list">
+            <li>
+              <span class="bullet-marker"></span>
+              <span>{{ langData()['SERVICES']?.['CAT2_ITEM1'] || 'Консультація кардіолога' }}</span>
+            </li>
+            <li>
+              <span class="bullet-marker"></span>
+              <span>{{
+                langData()['SERVICES']?.['CAT2_ITEM2'] || 'Добове моніторування ЕКГ (Холтер)'
+              }}</span>
+            </li>
+            <li>
+              <span class="bullet-marker"></span>
+              <span>{{
+                langData()['SERVICES']?.['CAT2_ITEM3'] || 'Моніторування артеріального тиску'
+              }}</span>
+            </li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <button class="details-btn" (click)="onBook('CAT2_TITLE')">
+            <span>{{ langData()['PAGES']?.['BTN_MORE'] || 'Детальніше' }}</span>
+            <span class="arrow">→</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="card-top">
+          <span class="service-number">03</span>
+          <div class="card-icon-placeholder"><i class="med-icon">✦</i></div>
+        </div>
+        <div class="card-body">
+          <h3>{{ langData()['SERVICES']?.['CAT3_TITLE'] || 'Лікування защемлень та артрозів' }}</h3>
+          <p class="short-desc">
+            {{
+              langData()['SERVICES']?.['CAT3_DESC'] ||
+                'Ефективне усунення болю та лікування виразок.'
+            }}
+          </p>
+          <ul class="subcategory-list">
+            <li>
+              <span class="bullet-marker"></span>
+              <span>{{ langData()['SERVICES']?.['CAT3_ITEM1'] || 'Карбокситерапія' }}</span>
+            </li>
+            <li>
+              <span class="bullet-marker"></span>
+              <span>{{ langData()['SERVICES']?.['CAT3_ITEM2'] || 'Голкотерапія' }}</span>
+            </li>
+            <li>
+              <span class="bullet-marker"></span>
+              <span>{{ langData()['SERVICES']?.['CAT3_ITEM3'] || 'Хіджама' }}</span>
+            </li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <button class="details-btn" (click)="onBook('CAT3_TITLE')">
+            <span>{{ langData()['PAGES']?.['BTN_MORE'] || 'Детальніше' }}</span>
+            <span class="arrow">→</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="card-top">
+          <span class="service-number">04</span>
+          <div class="card-icon-placeholder"><i class="med-icon">✦</i></div>
+        </div>
+        <div class="card-body">
+          <h3>{{ langData()['SERVICES']?.['CAT4_TITLE'] || 'Масаж та вісцеральна терапія' }}</h3>
+          <p class="short-desc">
+            {{
+              langData()['SERVICES']?.['CAT4_DESC'] ||
+                'Лікування опущень органів, спазмів та реабілітація легенів.'
+            }}
+          </p>
+          <ul class="subcategory-list">
+            <li>
+              <span class="bullet-marker"></span>
+              <span>{{
+                langData()['SERVICES']?.['CAT4_ITEM1'] || 'Вісцеральний масаж органів'
+              }}</span>
+            </li>
+            <li>
+              <span class="bullet-marker"></span>
+              <span>{{
+                langData()['SERVICES']?.['CAT4_ITEM2'] || 'Усунення фіброзних змін на легенях'
+              }}</span>
+            </li>
+            <li>
+              <span class="bullet-marker"></span>
+              <span>{{
+                langData()['SERVICES']?.['CAT4_ITEM3'] || 'Послуги професійного масажиста'
+              }}</span>
+            </li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <button class="details-btn" (click)="onBook('CAT4_TITLE')">
+            <span>{{ langData()['PAGES']?.['BTN_MORE'] || 'Детальніше' }}</span>
+            <span class="arrow">→</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="card-top">
+          <span class="service-number">05</span>
+          <div class="card-icon-placeholder"><i class="med-icon">✦</i></div>
+        </div>
+        <div class="card-body">
+          <h3>{{ langData()['SERVICES']?.['CAT5_TITLE'] || 'Косметологія та естетика' }}</h3>
+          <p class="short-desc">
+            {{
+              langData()['SERVICES']?.['CAT5_DESC'] ||
+                'Корекція дефектів шкіри обличчя та омолодження.'
+            }}
+          </p>
+          <ul class="subcategory-list">
+            <li>
+              <span class="bullet-marker"></span>
+              <span>{{
+                langData()['SERVICES']?.['CAT5_ITEM1'] || 'Видалення бородавок та папілом'
+              }}</span>
+            </li>
+            <li>
+              <span class="bullet-marker"></span>
+              <span>{{
+                langData()['SERVICES']?.['CAT5_ITEM2'] || 'Усунення рубців після акне та ластовиння'
+              }}</span>
+            </li>
+            <li>
+              <span class="bullet-marker"></span>
+              <span>{{
+                langData()['SERVICES']?.['CAT5_ITEM3'] || 'Підтяжка шкіри та зменшення зморшок'
+              }}</span>
+            </li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <button class="details-btn" (click)="onBook('CAT5_TITLE')">
+            <span>{{ langData()['PAGES']?.['BTN_MORE'] || 'Детальніше' }}</span>
+            <span class="arrow">→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div
+  class="premium-modal-backdrop"
+  [class.active]="(modalService.state$ | async)?.isOpen"
+  (click)="modalService.close()"
+>
+  <div
+    class="premium-modal-window"
+    [class.active]="(modalService.state$ | async)?.isOpen"
+    (click)="$event.stopPropagation()"
+  >
+    <div class="modal-content-wrapper" *ngIf="!isSubmitted">
+      <h2>{{ langData()['MODAL']?.['TITLE'] || 'Запис на прийом' }}</h2>
+      <p class="modal-subtitle">
+        {{
+          langData()['MODAL']?.['SUBTITLE'] ||
+            'Залиште контакти, і наш координатор зв’яжется з вами'
+        }}
+      </p>
+
+      <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+        <div
+          class="form-group"
+          [class.error]="bookingForm.get('name')?.touched && bookingForm.get('name')?.invalid"
+        >
+          <label>{{ langData()['MODAL']?.['INPUT_NAME'] || "Ваше ім'я" }}</label>
+          <input type="text" formControlName="name" placeholder="" />
+          <span
+            class="error-msg"
+            *ngIf="bookingForm.get('name')?.touched && bookingForm.get('name')?.invalid"
+          >
+            {{ langData()['MODAL']?.['ERR_NAME'] || "Будь ласка, вкажіть ім'я" }}
+          </span>
+        </div>
+
+        <div
+          class="form-group"
+          [class.error]="bookingForm.get('phone')?.touched && bookingForm.get('phone')?.invalid"
+        >
+          <label>{{ langData()['MODAL']?.['INPUT_PHONE'] || 'Номер телефону' }}</label>
+          <input
+            type="tel"
+            formControlName="phone"
+            placeholder="+380 (XX) XXX-XX-XX"
+            inputmode="tel"
+          />
+          <span
+            class="error-msg"
+            *ngIf="bookingForm.get('phone')?.touched && bookingForm.get('phone')?.invalid"
+          >
+            {{ langData()['MODAL']?.['ERR_PHONE'] || 'Некоректний формат номеру' }}
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label>{{ langData()['MODAL']?.['INPUT_DEPT'] || 'Напрямок послуги' }}</label>
+          <select formControlName="department">
+            <option value="" disabled selected>
+              {{ langData()['MODAL']?.['DEPT_PLACEHOLDER'] || 'Оберіть спеціаліста' }}
+            </option>
+            <option
+              [value]="langData()['SERVICES']?.['CAT1_TITLE'] || 'Безкоштовно за декларацією'"
+            >
+              {{ langData()['SERVICES']?.['CAT1_TITLE'] || 'Безкоштовно за декларацією' }}
+            </option>
+            <option [value]="langData()['SERVICES']?.['CAT2_TITLE'] || 'Cardiology'">
+              {{ langData()['SERVICES']?.['CAT2_TITLE'] || 'Кардіологія та діагностика' }}
+            </option>
+            <option [value]="langData()['SERVICES']?.['CAT3_TITLE'] || 'Therapy'">
+              {{ langData()['SERVICES']?.['CAT3_TITLE'] || 'Лікування защемлень та артрозів' }}
+            </option>
+            <option [value]="langData()['SERVICES']?.['CAT4_TITLE'] || 'Massage'">
+              {{ langData()['SERVICES']?.['CAT4_TITLE'] || 'Масаж та вісцеральна терапія' }}
+            </option>
+            <option [value]="langData()['SERVICES']?.['CAT5_TITLE'] || 'Aesthetics'">
+              {{ langData()['SERVICES']?.['CAT5_TITLE'] || 'Косметологія та естетика' }}
+            </option>
+          </select>
+        </div>
+
+        <button type="submit" class="modal-submit-btn" [disabled]="bookingForm.invalid">
+          {{ langData()['MODAL']?.['BTN_SUBMIT'] || 'Підтвердити запис' }}
+        </button>
+      </form>
+    </div>
+
+    <div class="modal-success-wrapper" *ngIf="isSubmitted">
+      <div class="success-icon">✦</div>
+      <h2>{{ langData()['MODAL']?.['SUCCESS_TITLE'] || 'Дякуємо!' }}</h2>
+      <p>
+        {{
+          langData()['MODAL']?.['SUCCESS_TEXT'] ||
+            'Вашу заявку успешно прийнято. Ми зателефонуємо вам протягом 15 хвилин.'
+        }}
+      </p>
+    </div>
+
+    <button type="button" class="modal-close-btn" (click)="modalService.close()">✕</button>
+  </div>
+</div>

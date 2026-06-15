@@ -22,6 +22,54 @@
     "BTN_MORE": "Learn More",
     "BTN_BOOK": "Book an Appointment"
   },
+  "SERVICES": {
+    "SECTION_SUBTITLE": "Our Specialties",
+    "SECTION_TITLE": "Medical Services for the Whole Family",
+    "CAT1_TITLE": "Free with Declaration",
+    "CAT1_DESC": "Services fully covered by the National Health Service of Ukraine (NHSU).",
+    "CAT1_ITEM1": "Family doctor consultation",
+    "CAT1_ITEM2": "Complete blood count (CBC)",
+    "CAT1_ITEM3": "Total cholesterol and glucose test",
+    "CAT1_ITEM4": "Urinalysis and ECG (Electrocardiogram)",
+    "CAT1_ITEM5": "Electronic sick leaves and referrals (to specialists or for advanced diagnostics)",
+
+    "CAT2_TITLE": "Cardiology & Diagnostics",
+    "CAT2_DESC": "Comprehensive evaluation of the heart and cardiovascular system.",
+    "CAT2_ITEM1": "Cardiologist consultation and ECG",
+    "CAT2_ITEM2": "24-hour Holter ECG monitoring",
+    "CAT2_ITEM3": "24-hour ambulatory blood pressure monitoring",
+
+    "CAT3_TITLE": "Treatment of Nerve Pinching & Arthrosis",
+    "CAT3_DESC": "Effective pain management of various origins and treatment of trophic ulcers.",
+    "CAT3_ITEM1": "Carboxytherapy",
+    "CAT3_ITEM2": "Acupuncture (Needle therapy)",
+    "CAT3_ITEM3": "Hijama (Capillary bloodletting / Cupping therapy)",
+
+    "CAT4_TITLE": "Massage & Visceral Therapy",
+    "CAT4_DESC": "Treatment of organ prolapse, spasms, and post-illness lung rehabilitation.",
+    "CAT4_ITEM1": "Visceral massage of internal organs (prolapse treatment, spasm relief)",
+    "CAT4_ITEM2": "Elimination of adhesions, reduction of keloid scars, and treatment of fibrotic changes in lungs",
+    "CAT4_ITEM3": "Professional massage services",
+
+    "CAT5_TITLE": "Cosmetology & Aesthetics",
+    "CAT5_DESC": "Correction of cosmetic skin defects and facial rejuvenation.",
+    "CAT5_ITEM1": "Removal of warts and papillomas",
+    "CAT5_ITEM2": "Acne scar removal, pigmentation lightening, and freckle removal",
+    "CAT5_ITEM3": "Facial skin lifting and wrinkle reduction (including expression lines)"
+  },
+  "MODAL": {
+    "TITLE": "Book an Appointment",
+    "SUBTITLE": "Leave your contact details, and our coordinator will get in touch with you shortly.",
+    "INPUT_NAME": "Your name",
+    "INPUT_PHONE": "Phone number",
+    "INPUT_DEPT": "Medical Department",
+    "DEPT_PLACEHOLDER": "Select a specialist",
+    "ERR_NAME": "Please enter your name",
+    "ERR_PHONE": "Invalid phone number format",
+    "BTN_SUBMIT": "Confirm Booking",
+    "SUCCESS_TITLE": "Thank You!",
+    "SUCCESS_TEXT": "Your request has been successfully submitted. We will call you within 15 minutes."
+  },
   "FOOTER": {
     "RIGHTS": "All rights reserved."
   }
